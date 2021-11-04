@@ -33,7 +33,9 @@
 [ Mycart / .mycart ]
 [responsive]
 -------------------------------------------------------------------*/
-
+html {
+	scroll-behavior: smooth;
+}
 
 @font-face {
 	font-family: 'segoeui';
@@ -313,7 +315,7 @@ header #logo{
 .slide-detail{
 	left: 12%;
     position: absolute;
-    right: 12%;
+    right: 40%;
 	z-index:1;
 	top:auto;
 	bottom:7%;
@@ -2756,7 +2758,7 @@ footer .powered .social li a:hover i{
 		right:20.5%;
 	}
 	.slide-detail {
-    	left: 25%;
+    	left: 0%;
 	}
 }
 @media (max-width:1600px) and  (min-width:900px){
