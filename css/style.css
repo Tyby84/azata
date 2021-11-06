@@ -88,8 +88,15 @@ a:focus{
 .paddright{
 	padding-right:0;
 }
+.pt {
+	padding-top: 15px;
+}
 .mar-b{
 	margin-bottom:80px;
+}
+.flex-center {
+	display: flex;
+	justify-content:space-evenly;
 }
 .btn-primary{
 	background:transparent;
@@ -138,12 +145,13 @@ a:focus{
 [ Header / header ]
 ---------------------*/
 header{
-	background: rgba(0, 0, 0, 0.45);
-    position: absolute;
+	background: rgb(231, 231, 231);
+	
+    /* position: absolute;
     left: 0;
     right: 0;
     z-index: 2;
-    top: 0;	
+    top: 0;	 */
 }
 .top{
 	border-bottom:1px solid #63625E;
@@ -163,7 +171,7 @@ header{
 	margin-right:8px;
 }
 .top .icon li a, .top .social li a{
-	color:#fff;
+	color: #222;
 	font-size:15px;
 }
 .top .social li{
@@ -204,7 +212,9 @@ header{
 	color:#fff;
 }
 header #logo{
-	margin:15px 0;
+	position: absolute;
+	top: 0;
+	z-index: 22;
 }
 @media(min-width:768px){
 #menu .menutext {
@@ -229,10 +239,10 @@ header #logo{
 }
 #menu .nav > li > a{
 	background-color: transparent;
-	color: #fff;
-	font-size: 14px;
-	font-weight: 500;
-	padding:0;
+	color: #222;
+	font-size: 15px;
+	font-weight: 00;
+	padding: 2px;
 	line-height: 14px;
 	text-transform:uppercase;
 	-webkit-transform: perspective(1px) translateZ(0);
@@ -308,6 +318,7 @@ header #logo{
 ----------------------------------- */
 .slide{
 	position:relative;
+	z-index: 23;
 }
 .slideshow img{
 	width:100%;
@@ -322,7 +333,7 @@ header #logo{
 	text-align:center;
 }
 .slide-detail img{
-	margin:0 auto;
+	margin:10px auto 0 auto;
 	width:11.5%;
 }
 .slide-detail h4{
@@ -399,7 +410,7 @@ header #logo{
 /*--------------------------------- 
 [ commontop / .commontop ]
 ----------------------------------- */
-.commontop h4{
+/* .commontop h4{
 	font-size:24px;
 	font-weight:700;
 	color:#000;
@@ -470,12 +481,12 @@ header #logo{
 }
 .order img{
 	margin:0 auto 80px;
-}
+} 
 /*--------------------- 
 [ about / .about ]
 ----------------------- */
 .about{
-	/* background:url(../images/about_bg.jpg) center center no-repeat; */
+	background:url("../images/cam1920.jpg") 80% 80% no-repeat; 
 	width:100%;
 	height:621px;
 }
@@ -591,109 +602,7 @@ header #logo{
 	color:#fff;
 	border:1px solid #FFA41F;
 } 
-/*--------------------- 
-[ dish / .dish ]
------------------------ */
-.dishes .commontop h4{
-	border-top:1px solid #ddd;
-	padding-top:40px;
-}
-.dishes {
-	margin:0 0 80px; 
-}
-.dish .box{
-	border:1px solid #E5E5E5;
-	min-height:276px;
-}
-.dish .box img{
-	margin:0 auto;
-}
-.dish .box .caption{
-	border-top:1px solid #E5E5E5;
-	padding:30px 15px;
-	text-align:center;
-}
-.dish .box .caption h4{
-	font-size:18px;
-	font-weight:600;
-	color:#000;
-	margin:0 0 20px;
-}
-.dish .box .caption p{
-	font-size:24px;
-	font-weight:600;
-	color:#FFA41F;
-	margin:0;
-	line-height:20px;
-}
-/*--------------------------------
-[ reservation / .reservation ]
----------------------------------- */
-.reservation{
-	background:url(../images/reservation_bg.jpg) center center no-repeat;
-	width:100%;
-	height:522px;
-}
-.reservation .commontop p, .reservation .commontop h4{
-	color:#fff;
-}
-.reservation  form .form-group{
-	margin:0;
-}
-.reservation  form .form-control {
-	background:transparent;
-	text-transform:uppercase;
-	height:45px;
-	margin-bottom:30px;
-	color:#fff;
-	padding:0 0 0 20px;
-}
-.bootstrap-select .dropdown-toggle::after{
-	border:none;
-}
-.bootstrap-select .dropdown-menu.inner{
-	display:block;
-}
-.bootstrap-select .dropdown-menu > li > a{
-	display: block;
-    padding: 3px 20px;
-    clear: both;
-    font-weight: normal;
-    line-height: 1.42857143;
-    color: #333;
-    white-space: nowrap;
-}
-.reservation  form .bootstrap-select .btn{
-	background:transparent;
-	text-transform:uppercase;
-	height:45px;
-	margin-bottom:0px;
-	color:#fff;
-	padding:0 0 0 20px;
-	border:1px solid #fff;
-}
-.reservation form .icofont {
-    position: absolute;
-    right: 18px;
-    padding: 15px 12px;
-    color: #fff;
-}
-.reservation form .bootstrap-select{
-	padding:0;
-}
-.reservation form .bootstrap-select .btn i{
-	right:0;
-	top:0;
-}
-.bootstrap-select.btn-group .dropdown-menu {
-    min-width: 100% ;
-}
-.reservation .btn-primary{
-	width:161px;
-	margin:20px 0 0;
-	border:1px solid #FFA41F;
-	background:#FFA41F;
-}
+
 /*--------------------------------
 [ gallery / .gallery ]
 ---------------------------------- */
@@ -788,7 +697,7 @@ header #logo{
 	height:800px;
 }
 .blog{
-	margin:50px 0;
+	margin:15px 0;
 }
 .blog .box{
 	margin-bottom:50px;
@@ -830,52 +739,7 @@ header #logo{
 	border:1px solid #FFA41F;
 	color:#fff;
 }
-/*-----------------------------
-[ newsletter / .newsletter ]
-------------------------------- */
-#newsletter{
-	background:#FFA41F;
-	padding:26px 0;
-}
-#newsletter .news{
-	float:left;
-	font-size:36px;
-	font-weight:700;
-	color:#fff;
-	text-transform:uppercase;
-	margin: 5px 0 0 0;
-}
-#newsletter p{
-	margin:-48px 0 0 38%;
-	font-size:14px;
-	font-weight:400;
-	color:#fff;
-	border-left:1px solid #D88100;
-	padding: 10px 0 15px 26px;
-}
-#newsletter .form-group{
-	margin:7px 0;
-}
-#newsletter .input-group{
-	width:100%;
-}
-#newsletter .input-group input{
-	width:75%;
-	height:50px;
-	font-size:14px;
-	border:0;
-	border-radius:4px;
-	padding:16px;
-}
-#newsletter .input-group .btn-news{
-	background:#D88100;
-	color:#fff;
-	font-size:16px;
-	font-weight:600;
-	border-radius:4px;
-	margin-left:10px;
-	padding:12px 26px;
-}
+
 /*----------------------
 [ footer / .footer ]
 ------------------------ */
@@ -1256,7 +1120,7 @@ footer .powered .social li a:hover i{
 [ abouts / .abouts ]
 ----------------------- */
 .abouts{
-	background:url(../images/about/bg.jpg) center center no-repeat;
+	/* background:url("../images/cam1920.jpg") center center no-repeat; */
 	width:100%;
 	height:621px;
 }
@@ -1588,13 +1452,19 @@ footer .powered .social li a:hover i{
 	border:1px solid #FFA41F;
 	margin:20px 0 0;
 }
+.map {
+	display: flex;
+	justify-content: center;
+	padding-top: 10px;
+}
 .address{
 	margin:0 0 80px;
 }
 .address .box{
 	border:1px solid #e5e5e5;
-	padding:19px 0;
+	padding: 10px;
 	height:190px;
+	width: 220px;
 }
 .address .box .icon{
 	background:#FFA41F;
