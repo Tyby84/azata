@@ -69,6 +69,17 @@ a:focus{
     outline: 0px auto -webkit-focus-ring-color;
     outline-offset: none ;
 }
+a.cta {
+	background-color: #FFA41F;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 15px;
+	padding: 5px 10px;
+	transition: all .5s;
+}
+a.cta:hover {
+	background-color: #b36e07;
+}
 .owl-wrapper-outer{
 	background:none ;
 	box-shadow:none ;
@@ -89,7 +100,7 @@ a:focus{
 	padding-right:0;
 }
 .pt {
-	padding-top: 15px;
+	padding-top: 25px;
 }
 .mar-b{
 	margin-bottom:80px;
@@ -344,9 +355,10 @@ header #logo{
 	text-transform:uppercase;
 }
 .slide-detail p{
-	font-size:16px;
+	font-size:18px;
 	color:#fff;
-	margin: 0 10% 25px;
+	margin: 5px auto 15px auto;
+	width: 40%;
 }
 .slide-detail .btn-primary{
 	width:190px;
@@ -486,25 +498,29 @@ header #logo{
 [ about / .about ]
 ----------------------- */
 .about{
-	background:url("../images/cam1920.jpg") 80% 80% no-repeat; 
+	background:url("../images/cctvlg.jpg") 50% 50% no-repeat;
+	background-color: rgba(34, 34, 34, 0.4);
+	background-blend-mode: darken; 
 	width:100%;
 	height:621px;
+	display: flex;
+	justify-content: center;
 }
-.about .commontop p{
-	margin:0 0 24px;
+.about p{
+	color: #fff;
 }
-.about .commontop hr{
-	margin:0 0 50px;
+.about  hr{
+	margin-bottom: 10px;
+	background-color: #fff;
 }
-.about .des{
-	margin:0 0 50px;
-	color: #686868;
+.about h3{
+	color: #fff;
+	padding-bottom: 5px;
+	text-align: center;
 }
-.about .btn-primary{
-	background:#FFA41F;
-	border:1px solid #FFA41F;
-	width:161px;
-} 
+.about .intro {
+	width: 80%;
+}
 /*--------------------- 
 [ menu / .menu ]
 ----------------------- */
