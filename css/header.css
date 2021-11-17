@@ -1,0 +1,73 @@
+header{
+	background: #fffff6;
+	
+    /* position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    top: 0;	 */
+}
+.top{
+	border-bottom:1px solid #63625E;
+}
+.top .icon, .top .social{
+	margin:0;
+}
+.top .icon{
+	padding:10px 0;
+}
+.top .icon li{
+	line-height:15px;
+	padding:0 22px 0 0;
+	display:inline-block;
+}
+.top .icon li i{
+	margin-right:8px;
+}
+.top .icon li a, .top .social li a{
+	color: #222;
+	font-size:15px;
+}
+.top .social li{
+	padding:0 14px 0 0;
+	line-height:14px;
+}
+.top .social li:last-child, .top .icon li:last-child {
+	padding:0 0px 0 0;
+}
+.top .social li i, #form-language .icofont-caret-down{
+	margin-right:0px;
+}
+.top .social li a:hover i{
+	color:#FFA41F;
+}
+#form-language .btn-link {
+	padding:0;
+	color: #fff;
+	font-size:13px;	
+	line-height:14px;
+}
+.top .dropdown-menu > li{
+	padding:0;
+	display:block;
+}
+.top .dropdown-menu > li > a{
+	border-right:0px solid #000;
+	padding-right:0;
+	color:#000;
+	font-size:13px;	
+	display: block;
+    padding: 3px 20px;
+    clear: both;
+	line-height:20px;
+}
+.top .dropdown-menu > li > a:hover{
+	background:#FFA41F;
+	color:#fff;
+}
+header #logo{
+	position: absolute;
+	top: 0;
+	z-index: 22;
+}
+

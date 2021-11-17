@@ -1,0 +1,49 @@
+@media (min-width:320px) and  (max-width:670px){
+	.top .icon li a, .top .social li a, #form-language .btn-link {
+		font-size: 9px;
+	}
+}
+@media (min-width:320px) and  (max-width:414px){
+	.slide-detail {
+		top: 5%;
+	}
+	.slide-detail p {
+		margin: 20px auto;
+		overflow: hidden;
+        width: 70%;
+	}
+	.about .des {
+		height: 150px;
+		overflow: hidden;
+	}
+    a.cta {
+        margin-top: 25px;
+    }
+	#header2 .slideshow img {
+		min-height: 141px;
+	}
+	#header2 .testimonails .box p {
+		height:94px;
+		overflow:hidden;
+	}
+	.shopdetail .buttons .btn-primary {
+		width: 112px;
+	}
+	
+	.mycart #tab-info h6 {
+		font-size: 16px;
+	}
+	.order .search-icon input {
+		width: 185px;
+	}
+	.order .search-icon .btn{
+		font-size:13px;
+		padding:12px 10px;
+	}
+	.order .search-icon .btn i {
+		margin-right: 5px;
+	}
+	.banner	.order ul li {
+		padding: 0 4px 0 0;
+	}
+}
